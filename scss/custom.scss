@@ -113,10 +113,17 @@ $white-color: #ffffff; // Define the white color if used
       
     /* Styling for the left side with the company name and tagline */
     .left-panel {
-        margin-right: -24px;
+        margin-right: -10px;
       }
   
-  
+      .left-panel h1,
+      .left-panel h2 {
+        padding-top: 3rem; 
+        padding-bottom: 3rem; 
+      }
+      
+
+
     // Keyframes for blinking effect
   @keyframes blinking {
     0%, 100% { opacity: 1; }
@@ -129,8 +136,7 @@ $white-color: #ffffff; // Define the white color if used
     color: $white-color; // White text color
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
-    margin: 50px;
+    padding:  20px;
     font-size: 16px;
     cursor: pointer;
     outline: none;
@@ -147,4 +153,5 @@ $white-color: #ffffff; // Define the white color if used
     // Applying the blinking animation
     animation: blinking 1s infinite;
   }
+  
   
