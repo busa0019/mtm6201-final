@@ -123,6 +123,23 @@ $white-color: #ffffff; // Define the white color if used
       }
       
 
+     /* Skip link styles */
+     .skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: $contrast;
+  color: $light;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+
 
     // Keyframes for blinking effect
   @keyframes blinking {

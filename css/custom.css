@@ -11910,6 +11910,22 @@ textarea.form-control-lg {
   padding-bottom: 3rem;
 }
 
+/* Skip link styles */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000000;
+  color: #f2f2f2;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 @keyframes blinking {
   0%, 100% {
     opacity: 1;
