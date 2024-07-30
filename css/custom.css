@@ -11900,7 +11900,7 @@ textarea.form-control-lg {
 
 /* Styling for the left side with the company name and tagline */
 .left-panel {
-  height: 100vh;
+  margin-right: -24px;
 }
 
 @keyframes blinking {
