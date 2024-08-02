@@ -6,20 +6,21 @@
   <title>Final</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
 </head>
 <body class="bg-light">
   <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#navigation" class="skip-link">Skip to navigation</a>
+  <a href="#navigation" class="skip-link">Skip to navigation</a>
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav id="navigation" class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
       <div class="container px-4">
         <img src="images/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-        <!-- <span class="text-white">FB Digital Creatives</span> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="d-inline-flex flex-column flex-lg-row ms-auto" id="navbarNav">
-          <ul class="navbar-nav ps-4-lg">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Bloom</a>
             </li>
@@ -37,26 +38,25 @@
       </div>
     </nav>
   </header>
-
   <main>
     <section id="hero">
-      <div class="container-fluid px-0 ">
-        <div class="row flex-lg-row-reverse align-items-center ">
+      <div class="container-fluid px-0">
+        <div class="row flex-lg-row-reverse align-items-center">
           <div class="col-lg-6">
             <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="images/hero-banner-598_x_336.jfif" class="d-block w-100 carousel-image" alt="Slide 1">
+                  <picture>
+                    <source srcset="images/hero-banner-320_x_180.jpeg, images/hero-banner-640_x_360.jpeg 2x, images/hero-banner-960_x_540.jpeg 3x" media="(max-width: 320px)">
+                    <source srcset="images/hero-banner-480_x_270.jpg, images/hero-banner-960_x_540.jpeg 2x, images/hero-banner-1440_x_810.jpeg 3x" media="(max-width: 480px)">
+                    <source srcset="images/hero-banner-720_x_405.jpg, images/hero-banner-1440_x_810.jpeg 2x, images/hero-banner-2160_x_1215.jpeg 3x" media="(max-width: 720px)">
+                    <source srcset="images/hero-banner-960_x_540.jpeg, images/hero-banner-1920_x_1080.jpg 2x, images/hero-banner-2880_x_1620.jpg 3x" media="(max-width: 960px)">
+                    <source srcset="images/hero-banner-1280_x_720.jpeg, images/hero-banner-2560_x_1440.jpg 2x, images/hero-banner-3840_x_2160.jpe 3x" media="(max-width: 1280px)">
+                    <source srcset="images/hero-banner-1600_x_900.jpg, images/hero-banner-3200_x_1800.jpg 2x, images/hero-banner-4800_x_2700.jpg 3x" media="(max-width: 1600px)">
+                    <source srcset="images/hero-banner-2500_x_1406.jpg, images/hero-banner-5000_x_2812.jpg 2x, images/hero-banner-7500_x_4218.jpg 3x" media="(min-width: 1600px)">
+                    <img src="images/hero-banner-480_x_270.jpg" class="d-block w-100 carousel-image" alt="Slide 1">
+                  </picture>
                 </div>
-                <div class="carousel-item">
-                  <img src="images/hero-598_x_336.jfif" class="d-block w-100 carousel-image" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/hero3.jpg" class="d-block w-100 carousel-image" alt="Slide 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/heroo-598_x_336.jfif" class="d-block w-100 carousel-image" alt="Slide 3">
-                  </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -68,29 +68,27 @@
               </button>
             </div>
           </div>
-
           <div class="col-lg-6 left-panel bg-secondary vh-100">
-            <h1 class="mb-5 ">FB Digital Creatives</h1>
-            <h2 class="mb-5 ">Bloom Digitally with Creative Excellence</h2>
-            <button type="submit" class="blink-button bg-primary">Unveil the magic by
-                clicking the image</button>
+            <h1 class="mb-5">FB Digital Creatives</h1>
+            <h2 class="mb-5">Bloom Digitally with Creative Excellence</h2>
+            <!-- <button type="submit" class="blink-button bg-primary">Unveil the magic by clicking the image</button> -->
+            <button type="submit" class="blink-button bg-primary animate__animated animate__bounce">Unveil the magic by clicking the image</button>
+          </div>
           </div>
         </div>
       </div>
     </section>
-    
     <div id="hiddenContent" class="hidden-content">
-        <section class="bg-dark text-light py-5">
-        <div class="container-fluid ">
-            <img src="images/her1.png" id="petalImage" class="d-block w-100" alt="Bootstrap Themes" loading="lazy">
-          </div>
-      
+      <section class="bg-dark text-light py-5">
+        <div class="container-fluid">
+          <img src="images/her1.png" id="petalImage" class="d-block w-100" alt="Bootstrap Themes" loading="lazy">
+        </div>
         <div class="container px-4">
           <h2 class="text-center">Explore our Offerings</h2>
           <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
             <div class="col d-flex align-items-start mb-3">
               <a href="#servicesSection" class="text-white">
-                <img src="images/our services-381_x_388.jfif" alt="Logo" >
+                <img src="images/our-services.jpg" alt="Logo">
                 <h3>Brief Intro to Our Services</h3>
               </a>
             </div>
@@ -102,20 +100,19 @@
             </div>
             <div class="col d-flex align-items-start mb-3">
               <a href="#featuredProjectsSection" class="text-white">
-                <img src="images/featured projects-381_x_388.jfif" alt="Logo">
+                <img src="images/featured-projects.jpg" alt="Logo">
                 <h3>Featured Project</h3>
               </a>
             </div>
           </div>
         </div>
-      </section>  
-      
+      </section>
       <section id="servicesSection" class="py-5 bg-dark text-white">
         <div class="container">
           <h2 class="mb-4">Our Services</h2>
           <div class="row mb-4">
             <div class="col-lg-6">
-              <img class="img-fluid" src="images/our services-381_x_388.jfif" alt="">
+              <img class="img-fluid" src="images/our-services.jpg" alt="">
             </div>
             <div class="col-lg-6 align-self-center">
               <h2>Brief intro to services</h2>
@@ -126,7 +123,6 @@
           </div>
         </div>
       </section>
-
       <section id="testimonialsSection" class="py-5 bg-dark text-white">
         <div class="container">
           <div class="row">
@@ -144,12 +140,11 @@
           </div>
         </div>
       </section>
-
       <section id="featuredProjectsSection" class="py-5 bg-dark text-white">
         <div class="container">
           <div class="row mb-4">
             <div class="col-lg-6">
-              <img class="img-fluid" src="images/featured projects-381_x_388.jfif" alt="">
+              <img class="img-fluid" src="images/featured-projects.jpg" alt="">
             </div>
             <div class="col-lg-6 align-self-center">
               <h2>Featured Projects</h2>
@@ -161,23 +156,18 @@
         </div>
       </section>
     </div>
-
-    <section  class="py-5 bg-dark text-center text-white">
-        <div class="container">
-              <h2 class="mb-4">Lets start your Bloom</h2>
-              <p class="mb-4">Ready to bloom digitally with us? Click the button below to get started!</p>
-              <a href="contact.html" class="btn btn-outline-primary">Begin Your Growth</a>
-               </a>
-            </div>
-      </section>
-    </main>
-
+    <section class="py-5 bg-dark text-center text-white">
+      <div class="container">
+        <h2 class="mb-4">Lets start your Bloom</h2>
+        <p class="mb-4">Ready to bloom digitally with us? Click the button below to get started!</p>
+        <a href="contact.html" class="btn btn-outline-primary">Begin Your Growth</a>
+      </div>
+    </section>
+  </main>
   <footer class="bg-secondary text-light py-3">
-    <div class="container">  
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <!-- <h4>Sitemap</h4>  -->
-          <!-- use it as nav, remove the title -->
           <ul class="list-unstyled">
             <li><a href="index.html" class="text-white">Bloom</a></li>
             <li><a href="about.html" class="text-white">Our Roots</a></li>
@@ -192,13 +182,10 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-6">
-              <!-- <h4>Legal</h4> -->
               <ul class="list-unstyled">
                 <li><a href="#" class="text-white">Privacy Petals</a></li>
                 <li><a href="#" class="text-white">Terms of Bloom</a></li>
               </ul>
-              <!-- <h4>Accessibility Options</h4> -->
-              <!-- replace this with  aria label -->
               <div class="accessibility-options">
                 <button class="btn btn-sm btn-light" onclick="adjustFontSize('increase')">A+</button>
                 <button class="btn btn-sm btn-light" onclick="adjustFontSize('decrease')">A-</button>
@@ -206,12 +193,10 @@
               </div>
             </div>
             <div class="col-md-6">
-              <!-- <h4>Social Media</h4>  -->
               <a href="https://twitter.com" target="_blank" class="text-white me-2"><i class="fab fa-twitter"></i></a>
               <a href="https://facebook.com" target="_blank" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
               <a href="https://instagram.com" target="_blank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
               <a href="https://linkedin.com" target="_blank" class="text-white"><i class="fab fa-linkedin-in mb-5"></i></a>
-              <!-- <h4>Language Selection</h4> -->
               <select class="form-control">
                 <option value="en">English</option>
                 <option value="es">Español</option>
@@ -228,15 +213,11 @@
         </div>
       </div>
     </div>
-  </footer> 
-
+  </footer>
   <button id="back-to-top" class="btn btn-primary back-to-top" onclick="scrollToTop()">&#8679;</button>
-
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/blooming-menu.js"></script>
   <script>
-        // Show or hide the "Back to Top" button
-        window.onscroll = function() {
+    window.onscroll = function() {
       var button = document.getElementById('back-to-top');
       if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         button.style.display = 'block';
@@ -244,14 +225,10 @@
         button.style.display = 'none';
       }
     };
-
-    // Scroll to the top of the document
     function scrollToTop() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
-
-    // JavaScript to toggle the visibility of content when clicking on carousel images
     var carouselImages = document.querySelectorAll('.carousel-item img');
     carouselImages.forEach(function(image) {
       image.addEventListener('click', function() {
@@ -259,14 +236,11 @@
         window.scrollTo({ top: document.getElementById('hiddenContent').offsetTop, behavior: 'smooth' });
       });
     });
-
     document.getElementById('petalImage').addEventListener('click', function() {
       var hiddenContent = document.getElementById('hiddenContent');
       hiddenContent.classList.add('hidden-content');
-      window.scrollTo(0, 0); // Scroll back to the top
+      window.scrollTo(0, 0);
     });
-
-    // JavaScript for accessibility
     function adjustFontSize(action) {
       var body = document.body;
       var style = window.getComputedStyle(body, null).getPropertyValue('font-size');
@@ -277,7 +251,6 @@
         body.style.fontSize = (currentSize - 1) + 'px';
       }
     }
-
     function toggleHighContrast() {
       var body = document.body;
       if (body.classList.contains('high-contrast')) {
@@ -287,21 +260,7 @@
       }
     }
 
-    var menu = new BloomingMenu({
-  itemsNum: 8
-})
-
-menu.render()
-
-menu.props.elements.items.forEach(function (item, index) {
-  item.addEventListener('click', function () {
-    console.log('Item #' + index + 'was clicked')
-  })
-})
-var menu = new BloomingMenu({
-  startAngle: 60,
-  endAngle: 0
-})
+  
   </script>
 </body>
 </html>

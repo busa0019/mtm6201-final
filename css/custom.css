@@ -11850,6 +11850,30 @@ textarea.form-control-lg {
   font-family: "Libre Baskerville", serif;
 }
 
+/* General styles for all links */
+a {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #59C1EF;
+  background-color: #E5446D;
+  text-decoration: none;
+}
+
+/* General styles for all buttons */
+.btn {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #A04ADD;
+  border-color: #3B53C7;
+  color: #000000;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -11926,14 +11950,6 @@ textarea.form-control-lg {
   top: 0;
 }
 
-@keyframes blinking {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
 .blink-button {
   background-color: #A04ADD;
   color: #ffffff;

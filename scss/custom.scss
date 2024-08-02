@@ -59,6 +59,35 @@ $white-color: #ffffff; // Define the white color if used
     font-family: $headings-font-family;
   }
   
+ 
+
+/* General styles for all links */
+a {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: $info; 
+  background-color:$danger; 
+  text-decoration: none; 
+}
+
+/* General styles for all buttons */
+.btn {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $primary; 
+  border-color: $secondary; 
+  color: $contrast; 
+}
+
+
+
+
   .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -141,11 +170,11 @@ $white-color: #ffffff; // Define the white color if used
 
 
 
-    // Keyframes for blinking effect
-  @keyframes blinking {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
+  //   // Keyframes for blinking effect
+  // @keyframes blinking {
+  //   0%, 100% { opacity: 1; }
+  //   50% { opacity: 0; }
+  // }
   
   // Custom button style with blinking animation
   .blink-button {
@@ -164,11 +193,13 @@ $white-color: #ffffff; // Define the white color if used
     }
   
     &:focus {
-      outline: none; // Remove default focus outline
+      outline: none; 
     }
   
-    // Applying the blinking animation
+    //  animation
     animation: blinking 1s infinite;
   }
   
-  
+ 
+
+
