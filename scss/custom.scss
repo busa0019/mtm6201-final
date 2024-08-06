@@ -55,12 +55,13 @@ $white-color: #ffffff; // Define the white color if used
 // Then add additional custom code here
 // target normal css code
 // Target .navbar-brand and change font-family to use 'Libre Baskerville'.
+
+// Base style for mobile default
+
 .navbar-brand {
     font-family: $headings-font-family;
   }
   
- 
-
 /* General styles for all links */
 a {
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -84,9 +85,6 @@ a:focus {
   border-color: $secondary; 
   color: $contrast; 
 }
-
-
-
 
   .back-to-top {
     position: fixed;
@@ -178,7 +176,6 @@ a:focus {
 }
 
 
-
   //   // Keyframes for blinking effect
   // @keyframes blinking {
   //   0%, 100% { opacity: 1; }
@@ -206,9 +203,75 @@ a:focus {
     }
   
     //  animation
-    animation: blinking 1s infinite;
+    animation:blinking 1s infinite;
   }
   
  
+/* Tablet Media Query (min-width: 768px and max-width: 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #servicesSection .row {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+  }
 
+  #servicesSection .col-lg-6 {
+    flex: 1;
+  }
+
+  #servicesSection .col-lg-6:first-of-type {
+    order: 2; 
+  }
+
+  #servicesSection .col-lg-6:last-of-type {
+    order: 1; 
+  }
+
+  #testimonialsSection .row {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+  }
+
+  #testimonialsSection .col-lg-6 {
+    flex: 1; 
+  }
+
+  #testimonialsSection .col-lg-6.order-lg-2 {
+    order: 1; 
+  }
+
+  #testimonialsSection .col-lg-6.order-lg-1 {
+    order: 2; 
+  }
+
+  #featuredProjectsSection .row {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+  }
+
+  #featuredProjectsSection .col-lg-6 {
+    flex: 1; 
+  }
+
+  #featuredProjectsSection .col-lg-6:first-of-type {
+    order: 2; 
+  }
+
+  #featuredProjectsSection .col-lg-6:last-of-type {
+    order: 1;
+  }
+  
+}
+
+
+
+
+
+
+/* Desktop devices (992px and up) */
+@media (min-width: 992px) {
+  
+}
 

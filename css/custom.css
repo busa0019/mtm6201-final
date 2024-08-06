@@ -11980,4 +11980,51 @@ a:focus {
   outline: none;
 }
 
+/* Tablet Media Query (min-width: 768px and max-width: 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #servicesSection .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #servicesSection .col-lg-6 {
+    flex: 1;
+  }
+  #servicesSection .col-lg-6:first-of-type {
+    order: 2;
+  }
+  #servicesSection .col-lg-6:last-of-type {
+    order: 1;
+  }
+  #testimonialsSection .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #testimonialsSection .col-lg-6 {
+    flex: 1;
+  }
+  #testimonialsSection .col-lg-6.order-lg-2 {
+    order: 1;
+  }
+  #testimonialsSection .col-lg-6.order-lg-1 {
+    order: 2;
+  }
+  #featuredProjectsSection .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #featuredProjectsSection .col-lg-6 {
+    flex: 1;
+  }
+  #featuredProjectsSection .col-lg-6:first-of-type {
+    order: 2;
+  }
+  #featuredProjectsSection .col-lg-6:last-of-type {
+    order: 1;
+  }
+}
+/* Desktop devices (992px and up) */
+
 /*# sourceMappingURL=custom.css.map */
