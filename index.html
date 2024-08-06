@@ -102,8 +102,8 @@
                     images/hero-banner-3-small@2x.jpg 2x, 
                     images/hero-banner-3-small@3x.jpg 3x"
                     media="(max-width: 767px)">
-                    
-                    <img src="images/hero-banner-3-default.jpg" class="d-block w-100 carousel-image" alt="Slide 3">
+
+                    <img src="images/hero-banner-3-default.jpg" class="d-block w-100 carousel-image" alt="Hero Banner Slide 3">
                   </picture>
                 </div>
               </div>
@@ -131,27 +131,73 @@
     <div id="hiddenContent" class="hidden-content">
       <section class="bg-dark text-light py-5">
         <div class="container-fluid">
-          <img src="images/her1.png" id="petalImage" class="d-block w-100" alt="Bootstrap Themes" loading="lazy">
+          <picture>
+            <source media="(min-width: 1024px)"
+                srcset="./images/meetings-large.jpg">
+
+            <source media="(min-width: 768px)"
+                srcset="./images/meetings-medium.jpg">
+
+            <source media="(max-width: 767px)"
+                srcset="./images/meetings-small.jpg">
+
+                <img src="images/meetings.jpg" id="petalImage" class="d-block w-100 mb-5" alt="Bootstrap Themes" loading="lazy">
+        </picture>
+          
         </div>
         <div class="container px-4">
           <h2 class="text-center">Explore our Offerings</h2>
+
           <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
             <div class="col d-flex align-items-start mb-3">
               <a href="#servicesSection" class="text-white">
-                <img src="images/our-services.jpg" alt="Logo">
-                <h3>Brief Intro to Our Services</h3>
+                <picture>
+                  <source media="(min-width: 1024px)"
+                      srcset="./images/our-services-large.jpg">
+      
+                  <source media="(min-width: 768px)"
+                      srcset="./images/our-services-medium.jpg">
+      
+                  <source media="(max-width: 767px)"
+                      srcset="./images/our-services-small.jpg">
+      
+                      <img src="images/our-services.jpg" id="petalImage" class="d-block w-100 mb-3" alt="Bootstrap Themes image showing our services offered with a flower theme background" loading="lazy"  aria-label="">
+              </picture>
+                <h3 class="text-center mb-3">Brief Intro to Our Services</h3>
               </a>
             </div>
             <div class="col d-flex align-items-start mb-3">
               <a href="#testimonialsSection" class="text-white">
-                <img src="images/testimonials.jpg" alt="Logo">
-                <h3>Client Testimonials</h3>
+                <picture>
+                  <source media="(min-width: 1024px)"
+                      srcset="./images/testimonials-large.jpg">
+      
+                  <source media="(min-width: 768px)"
+                      srcset="./images/testimonials-medium.jpg">
+      
+                  <source media="(max-width: 767px)"
+                      srcset="./images/testimonials-small.jpg">
+      
+                      <img src="images/testimonials.jpg" id="petalImage" class="d-block w-100 mb-3" alt="image showing client testimonials" loading="lazy"  aria-label="">
+              </picture>
+                <h3 class="text-center mb-3">Client Testimonials</h3>
               </a>
             </div>
             <div class="col d-flex align-items-start mb-3">
               <a href="#featuredProjectsSection" class="text-white">
-                <img src="images/featured-projects.jpg" alt="Logo">
-                <h3>Featured Project</h3>
+                <picture>
+                  <source media="(min-width: 1024px)"
+                      srcset="./images/featured-projects-large.jpg">
+      
+                  <source media="(min-width: 768px)"
+                      srcset="./images/featured-projects-medium.jpg">
+      
+                  <source media="(max-width: 767px)"
+                      srcset="./images/featured-projects-small.jpg">
+      
+                      <img src="images/featured-projects.jpg" id="petalImage" class="d-block w-100 mb-3" alt="image showing collage of projects" loading="lazy"  aria-label="">
+              </picture>
+                <h3 class="text-center mb-3">Featured Project</h3>
               </a>
             </div>
           </div>
@@ -159,7 +205,7 @@
       </section>
       <section id="servicesSection" class="py-5 bg-dark text-white">
         <div class="container">
-          <h2 class="mb-4">Our Services</h2>
+           <!-- <h2 class="mb-4 text-center">Our Services</h2> -->
           <div class="row mb-4">
             <div class="col-lg-6">
               <img class="img-fluid" src="images/our-services.jpg" alt="">
@@ -184,7 +230,7 @@
                 <h2>Client Testimonials</h2>
                 <p>Hear the sweet melodies of our delighted clients as they share how FB Digital Creatives nurtured their visions and helped their brands flourish. Discover the stories of growth and success that blossomed from our collaboration.</p>
                 <a href="#hero" class="btn btn-outline-primary">Back to image</a>
-                <a href="#services.html" class="btn btn-primary">Explore</a>
+                <a href="#" class="btn btn-primary">Explore</a>
               </div>
             </div>
           </div>
@@ -200,7 +246,7 @@
               <h2>Featured Projects</h2>
               <p>Explore a vibrant garden of our finest work. Each project showcases the unique, creative blooms we've cultivated, bringing digital visions to life with flair and excellence. Discover the seeds of innovation that have grown into remarkable digital experiences.</p>
               <a href="#hero" class="btn btn-outline-primary">Back to image</a>
-              <a href="#services.html" class="btn btn-primary">Explore</a>
+              <a href="#" class="btn btn-primary">Explore</a>
             </div>
           </div>
         </div>
