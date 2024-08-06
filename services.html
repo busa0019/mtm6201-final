@@ -6,20 +6,60 @@
   <title>Final</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FB Digital Creatives",
+      "url": "https://www.fbdigitalcreatives.com",
+      "logo": "https://www.fbdigitalcreatives.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-5555",
+        "contactType": "Customer Service",
+        "areaServed": "US",
+        "availableLanguage": ["English", "Espanol", "French", "Deutsch"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/fbdigitalcreatives",
+        "https://www.twitter.com/fbdigitalcreatives",
+        "https://www.instagram.com/fbdigitalcreatives",
+        "https://www.linkedin.com/company/fbdigitalcreatives"
+      ]
+    },
+    
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "FB Digital Creatives Home",
+      "url": "https://www.fbdigitalcreatives.com",
+      "description": "Welcome to FB Digital Creatives, where we help your business blossom online with our web design, development, and digital marketing services.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FB Digital Creatives",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.fbdigitalcreatives.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+
 </head>
 <body class="bg-light">
   <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#navigation" class="skip-link">Skip to navigation</a>
+  <a href="#navigation" class="skip-link">Skip to navigation</a>
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav id="navigation" class="navbar navbar-expand-lg bg-dark" aria-label="Main navigation">
       <div class="container px-4">
-        <img src="images/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-        <span class="text-white">FB Digital Creatives</span>
+        <img src="images/logo.png" alt="FB Digital Creatives Logo" style="height: 40px; margin-right: 10px;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="d-inline-flex flex-column flex-lg-row ms-auto" id="navbarNav">
-          <ul class="navbar-nav ps-4-lg">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Bloom</a>
             </li>
@@ -27,7 +67,7 @@
               <a class="nav-link" href="about.html">Our Roots</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Lets Bloom Together</a>
+              <a class="nav-link" href="contact.html">Let's Bloom Together</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Blossoms</a>
@@ -38,99 +78,136 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section id="hero">
-      <div class="container px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="container-fluid px-0">
+        <div class="row flex-lg-row-reverse align-items-center">
           <div class="col-lg-6">
-            <img src="images/hero3.jpg" id="heroImage" class="d-block mx-lg-auto img-fluid" alt="Hero Image" loading="lazy">
+            <!-- Added a descriptive label for the carousel -->
+            <div id="heroCarouselLabel" class="visually-hidden">Hero Carousel: Slide through image with flower theme.</div>
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" aria-labelledby="heroCarouselLabel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <picture>
+                    <source srcset="images/hero-banner-2-large.jpg, images/hero-banner-2-large@2x.jpg 2x, images/hero-banner-2-large@3x.jpg 3x" media="(min-width: 1024px)">
+                    <source srcset="images/hero-banner-2-medium.jpg, images/hero-banner-2-medium@2x.jpg 2x, images/hero-banner-2-medium@3x.jpg 3x" media="(min-width: 768px)">
+                    <source srcset="images/hero-banner-2-small.jpg, images/hero-banner-2-small@2x.jpg 2x, images/hero-banner-2-small@3x.jpg 3x" media="(max-width: 767px)">
+                    <img src="images/hero-banner-2-default.jpg" class="d-block w-100 carousel-image" alt="Hero Banner Slide 2 showing creative digital solutions" aria-label="Hero Banner Slide 2">
+                  </picture>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <h1 class="mb-5">Services we offered</h1>
-            <button type="submit" class="blink-button bg-primary">click the image to discover more</button>
+          <div class="col-lg-6 left-panel bg-secondary vh-100">
+            <h1 class="mb-5 text-white">FB Digital Creatives</h1>
+            <h2 class="mb-5 text-white">Blossom with Us</h2>
+            <button type="button" class="blink-button bg-primary animate__animated animate__bounce" aria-label="Click to unveil the magic">Unveil the magic by clicking the image</button>
           </div>
         </div>
       </div>
     </section>
 
-    <div id="hiddenContent" class="hidden-content">
-      <section class="bg-dark text-light py-5">
-        <div class="container px-4">
-          <img src="images/petals.jpg" id="petalImage" class="d-block mx-lg-auto img-fluid mb-5" alt="Petals Image">
-          <h2 class="mb-5 text-center">Boost Your Online Presence With Our Unique Services</h2>
-          <p class="mb-5 text-center">At our company, we offer a range of expert Tech services designed to help businesses improve their online visibility and attract more targeted traffic to their website. From comprehensive keyword research and on-page optimization to strategic link building and content creation, our services are tailored to meet the unique needs of each client.</p>
+    <section id="hiddenContent" class="hidden-content">
+      <div class="bg-dark text-light py-5">
+        <div class="container-fluid">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./images/daises-large.png">
+            <source media="(min-width: 768px)" srcset="./images/daises-medium.png">
+            <source media="(max-width: 767px)" srcset="./images/daises-small.png">
+            <img src="images/daises.png" id="petalImage" class="d-block mx-lg-auto img-fluid mb-5 w-100" alt="Image showing a business meeting setup" aria-label="Business meeting setup" loading="lazy">
+          </picture>
+          <h3 class="mb-5 text-center">Boost Your Online Presence With Our Unique Services</h3>
+          <p class="mb-5 text-center">At FB Digital Creatives, we cultivate a vibrant array of digital services designed to help your ideas flourish. From innovative web design and captivating video production to intuitive UI/UX design and dynamic graphic solutions, our team of creative gardeners nurtures each project with care and precision. Join us on this blooming journey and watch your digital presence grow into something truly spectacular.</p>
 
           <section class="py-5 bg-dark text-white">
             <div class="container">
-                <h2 class="mb-4">Our Services</h2>
-      
-                <div class="row gy-4">
-      
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card text-bg-dark" >
-                      <img src="images/web-517_x_363.jfif" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h2 class="card-title">Web Development</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laudantium laborum iure delectus nobis, earum commodi rem ex? Ipsum reprehenderit corporis quia iste autem soluta fugiat, et quaerat praesentium impedit.</p>
-                        <a href="#" class="btn btn-light">View More</a>
-                      </div>
+              <h3 class="mb-4 text-center">Our Services</h3>
+              <div class="row gy-4">
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-bg-dark">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="./images/web-large.jpg">
+                      <source media="(min-width: 768px)" srcset="./images/web-medium.jpg">
+                      <source media="(max-width: 767px)" srcset="./images/web-small.jpg">
+                      <img src="images/web.jpg" class="card-img-top d-block mx-lg-auto img-fluid mb-5 w-100" alt="Image showing various web development tools" aria-label="laptop with web development expertise" loading="lazy">
+                    </picture>
+                    <div class="card-body">
+                      <h3 class="card-title">Web Development</h3>
+                      <p class="card-text">At FB Digital Creatives, we build more than just websites; we cultivate digital experiences. Our web development team blends technical expertise with creative flair to design sites that are not only functional but also visually stunning. From responsive design to seamless navigation, we ensure your online presence is robust and engaging, ready to bloom in the digital landscape.</p>
+                      <a href="#" class="btn btn-secondary">View More</a>
                     </div>
                   </div>
-      
-      
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card text-bg-dark" >
-                      <img src="images/photography-517_x_363.jfif" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h2 class="card-title">Photography</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore non obcaecati nemo fugiat quos sunt repellendus alias facere recusandae, assumenda quo saepe nam magnam in odit! Voluptatibus, suscipit aperiam?</p>
-                        <a href="#" class="btn btn-light">View More</a>
-                        </div>
-                      </div>
-                  </div>
-      
-      
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card text-bg-dark" >
-                      <img src="images/digital-517_x_363.jfif" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h2 class="card-title">Digital Graphics</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ex at labore minus cumque optio! Enim saepe nesciunt recusandae quibusdam quasi ex! Laboriosam nostrum eveniet nemo necessitatibus fugiat cumque inventore.</p>
-                        <a href="#" class="btn btn-light">View More</a>
-                        </div>
-                      </div>
-                  </div>
-      
-      
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card text-bg-dark" >
-                      <img src="images/Screenshot 2024-07-25 161855.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h2 class="card-title">UI/UX</h5>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor harum tempore delectus officiis sunt modi cupiditate nam, optio incidunt facilis minus unde obcaecati quidem earum? Quis natus veritatis porro placeat.</p>
-                        <a href="#" class="btn btn-light">View More</a>
-                        </div>
-                      </div>
-                  </div>
-      
                 </div>
-      
+
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-bg-dark">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="./images/photography-large.jpg">
+                      <source media="(min-width: 768px)" srcset="./images/photography-medium.jpg">
+                      <source media="(max-width: 767px)" srcset="./images/photography-small.jpg">
+                      <img src="images/photography.jpg" class="card-img-top d-block mx-lg-auto img-fluid mb-5 w-100" alt="Image showcasing professional photography work" aria-label="professional photography" loading="lazy">
+                    </picture>
+                    <div class="card-body">
+                       <h3 class="card-title">Photography/Video</h3>
+                        <p class="card-text">Capture the essence of your brand with our professional photography and video production services. Our skilled visual storytellers create compelling imagery and videos that resonate with your audience. Whether it’s product photography, corporate videos, or event coverage, we deliver visuals that are as vibrant and dynamic as a blooming garden.</p>
+                        <a href="#" class="btn btn-primary">View More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-bg-dark">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="./images/digital-large.jpg">
+                      <source media="(min-width: 768px)" srcset="./images/digital-medium.jpg">
+                      <source media="(max-width: 767px)" srcset="./images/digital-small.jpg">
+                      <img src="images/digital.jpg" class="card-img-top d-block mx-lg-auto img-fluid mb-5 w-100"  alt="Image showing various digital services" aria-label="laptop with digital services" loading="lazy">
+                    </picture>
+                    <div class="card-body">
+                      <h3 class="card-title">Digital Graphics</h3>
+                      <p class="card-text">Bring your brand to life with our bespoke graphic design services. Our creative team excels in producing eye-catching graphics that communicate your message effectively. From logo design and branding materials to marketing collateral and social media graphics, we ensure your brand’s visual identity is consistent, appealing, and ready to flourish in any medium.</p>
+                      <a href="#" class="btn btn-secondary">View More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-bg-dark">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="./images/ui-ux-large.jpg">
+                      <source media="(min-width: 768px)" srcset="./images/ui-ux-medium.jpg">
+                      <source media="(max-width: 767px)" srcset="./images/ui-ux-small.jpg">
+                      <img src="images/ui-ux.jpg" class="card-img-top d-block mx-lg-auto img-fluid mb-5 w-100"  alt="Image showing chart of ui/ux" aria-label="shape with ui/ux content" loading="lazy">
+                    </picture>
+                    <div class="card-body">
+                      <h3 class="card-title">UI/UX Design</h3>
+                      <p class="card-text">User experience is at the heart of everything we do. Our UI/UX design services focus on creating intuitive and enjoyable interactions for your users. We craft designs that are not only aesthetically pleasing but also highly functional, ensuring that every click and swipe feels natural and engaging. Let us help you cultivate an interface that users will love.</p>
+                      <a href="#" class="btn btn-success">View More</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-      
+            </div>
           </section>
+        </div>
+      </div>
+    </section>
 
-        
-
-         
-
-         
+    <section class="py-5 bg-dark text-center text-white">
+      <div class="container">
+        <h2 class="mb-4">Let's start your Bloom</h2>
+        <p class="mb-4">Ready to bloom digitally with us? Click the button below to get started!</p>
+        <a href="contact.html" class="btn btn-outline-primary text-white">Begin Your Growth</a>
+      </div>
+    </section>
   </main>
 
+
+
   <footer class="bg-secondary text-light py-3">
-    <div class="container">  
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h4>Sitemap</h4>
           <ul class="list-unstyled">
             <li><a href="index.html" class="text-white">Bloom</a></li>
             <li><a href="about.html" class="text-white">Our Roots</a></li>
@@ -138,33 +215,30 @@
             <li><a href="#" class="text-white">Sprout Ideas (Blog)</a></li>
             <li><a href="#" class="text-white">Showcase Garden</a></li>
             <li><a href="services.html" class="text-white">Blossoms</a></li>
-            <li><a href="contact.html" class="text-white">Lets bloom together</a></li>
-            <li><a href="#" class="text-white">Join our Garden</a></li>
+            <li><a href="contact.html" class="text-white">Let's Bloom Together</a></li>
+            <li><a href="#" class="text-white">Join Our Garden</a></li>
           </ul>
         </div>
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-6">
-              <h4>Legal</h4>
               <ul class="list-unstyled">
                 <li><a href="#" class="text-white">Privacy Petals</a></li>
                 <li><a href="#" class="text-white">Terms of Bloom</a></li>
               </ul>
-              <h4>Accessibility Options</h4>
-              <div class="accessibility-options">
-                <button class="btn btn-sm btn-light" onclick="adjustFontSize('increase')">A+</button>
-                <button class="btn btn-sm btn-light" onclick="adjustFontSize('decrease')">A-</button>
-                <button class="btn btn-sm btn-light" onclick="toggleHighContrast()">High Contrast</button>
+              <div class="accessibility-options" role="group" aria-label="Accessibility Options">
+                <button class="btn btn-sm btn-light" onclick="adjustFontSize('increase')" aria-label="Increase Font Size">A+</button>
+                <button class="btn btn-sm btn-light" onclick="adjustFontSize('decrease')" aria-label="Decrease Font Size">A-</button>
+                <button class="btn btn-sm btn-light" onclick="toggleHighContrast()" aria-label="Toggle High Contrast Mode">High Contrast</button>
               </div>
             </div>
             <div class="col-md-6">
-              <h4>Social Media</h4>
-              <a href="https://twitter.com" target="_blank" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-              <a href="https://facebook.com" target="_blank" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://instagram.com" target="_blank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-              <a href="https://linkedin.com" target="_blank" class="text-white "><i class="fab fa-linkedin-in mb-5"></i></a>
-              <h4>Language Selection</h4>
-              <select class="form-control">
+              <a href="https://twitter.com" target="_blank" class="text-white me-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://facebook.com" target="_blank" class="text-white me-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" class="text-white me-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin-in mb-5"></i></a>
+              <label for="language-selector" class="visually-hidden">Language Selector</label>
+              <select id="language-selector" class="form-control" aria-label="Select Language">
                 <option value="en">English</option>
                 <option value="es">Español</option>
                 <option value="fr">Français</option>
@@ -180,13 +254,12 @@
         </div>
       </div>
     </div>
-  </footer> 
+  </footer>
 
-  <button id="back-to-top" class="btn btn-primary back-to-top" onclick="scrollToTop()">&#8679;</button>
+  <button id="back-to-top" class="btn btn-primary back-to-top" onclick="scrollToTop()" aria-label="Back to Top">&#8679;</button>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Show or hide the "Back to Top" button
     window.onscroll = function() {
       var button = document.getElementById('back-to-top');
       if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -195,26 +268,22 @@
         button.style.display = 'none';
       }
     };
-
-    // Scroll to the top of the document
     function scrollToTop() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
-
-    // JavaScript to toggle the visibility of content
-    document.getElementById('heroImage').addEventListener('click', function() {
-      var hiddenContent = document.getElementById('hiddenContent');
-      hiddenContent.classList.remove('hidden-content');
+    var carouselImages = document.querySelectorAll('.carousel-item img');
+    carouselImages.forEach(function(image) {
+      image.addEventListener('click', function() {
+        document.getElementById('hiddenContent').classList.remove('hidden-content');
+        window.scrollTo({ top: document.getElementById('hiddenContent').offsetTop, behavior: 'smooth' });
+      });
     });
-
     document.getElementById('petalImage').addEventListener('click', function() {
       var hiddenContent = document.getElementById('hiddenContent');
       hiddenContent.classList.add('hidden-content');
-      window.scrollTo(0, 0); // Scroll back to the top
+      window.scrollTo(0, 0);
     });
-
-    // JavaScript for accessibility
     function adjustFontSize(action) {
       var body = document.body;
       var style = window.getComputedStyle(body, null).getPropertyValue('font-size');
@@ -225,7 +294,6 @@
         body.style.fontSize = (currentSize - 1) + 'px';
       }
     }
-  
     function toggleHighContrast() {
       var body = document.body;
       if (body.classList.contains('high-contrast')) {
@@ -234,6 +302,8 @@
         body.classList.add('high-contrast');
       }
     }
+
+  
   </script>
 </body>
 </html>
