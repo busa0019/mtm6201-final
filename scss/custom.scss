@@ -57,6 +57,9 @@ $white-color: #ffffff;
 // Target .navbar-brand and change font-family to use 'Libre Baskerville'.
 
 // Base style for mobile default
+.logo {
+  height: 40px;
+}
 
 .navbar-brand {
     font-family: $headings-font-family;
@@ -150,12 +153,6 @@ a:focus {
     /* Styling for the left side with the company name and tagline */
     .left-panel {
         margin-right: -10px;
-      }
-  
-      .left-panel h1,
-      .left-panel h2 {
-        padding-top: 3rem; 
-        padding-bottom: 3rem; 
       }
       
 

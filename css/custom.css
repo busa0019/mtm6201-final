@@ -11846,6 +11846,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.logo {
+  height: 40px;
+}
+
 .navbar-brand {
   font-family: "Libre Baskerville", serif;
 }
@@ -11936,13 +11940,6 @@ a:focus {
 /* Styling for the left side with the company name and tagline */
 .left-panel {
   margin-right: -10px;
-}
-
-.left-panel h1, .left-panel .h1,
-.left-panel h2,
-.left-panel .h2 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 /* Skip link styles */
