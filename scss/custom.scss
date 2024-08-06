@@ -19,8 +19,8 @@ $dark: #181853;
 
 
 // New color additions
-$highlight: #FFFF00; // Example of a new color
-$contrast: #000000; // Example of a new color
+$highlight: #FFFF00; 
+$contrast: #000000; 
 
 
 // Adjust nav link hover color here
@@ -43,9 +43,8 @@ $h6-font-size: 1rem;
 
 // $spacer: 5rem;
 // Define the missing colors
-// Define the missing colors
-$primary-color: $primary; // or define it explicitly
-$white-color: #ffffff; // Define the white color if used
+$primary-color: $primary; 
+$white-color: #ffffff; 
 
 
 
@@ -121,14 +120,14 @@ a:focus {
   
   .high-contrast {
     background-color: $dark;
-    color: $highlight; //bright text color 
+    color: $highlight; 
   
     a {
-      color:$info; // for inks
+      color:$info; 
     }
   
     button {
-      background-color:$highlight; //yellow background for buttons
+      background-color:$highlight; 
       color: $contrast; 
     }
   }
@@ -176,16 +175,10 @@ a:focus {
 }
 
 
-  //   // Keyframes for blinking effect
-  // @keyframes blinking {
-  //   0%, 100% { opacity: 1; }
-  //   50% { opacity: 0; }
-  // }
-  
   // Custom button style with blinking animation
   .blink-button {
-    background-color: $primary; // Use your primary color
-    color: $white-color; // White text color
+    background-color: $primary; 
+    color: $white-color; 
     border: none;
     border-radius: 5px;
     padding:  20px;
@@ -265,13 +258,4 @@ a:focus {
   
 }
 
-
-
-
-
-
-/* Desktop devices (992px and up) */
-@media (min-width: 992px) {
-  
-}
 
