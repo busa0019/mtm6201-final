@@ -6,16 +6,55 @@
   <title>Final</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FB Digital Creatives",
+      "url": "https://www.fbdigitalcreatives.com",
+      "logo": "https://www.fbdigitalcreatives.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-5555",
+        "contactType": "Customer Service",
+        "areaServed": "US",
+        "availableLanguage": ["English", "Espanol", "French", "Deutsch"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/fbdigitalcreatives",
+        "https://www.twitter.com/fbdigitalcreatives",
+        "https://www.instagram.com/fbdigitalcreatives",
+        "https://www.linkedin.com/company/fbdigitalcreatives"
+      ]
+    },
+    
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "FB Digital Creatives Home",
+      "url": "https://www.fbdigitalcreatives.com",
+      "description": "Welcome to FB Digital Creatives, where we help your business blossom online with our web design, development, and digital marketing services.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FB Digital Creatives",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.fbdigitalcreatives.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+
 </head>
 <body class="bg-light">
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <a href="#navigation" class="skip-link">Skip to navigation</a>
   <header>
-    <nav id="navigation" class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav id="navigation" class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"  aria-label="Main navigation">
       <div class="container px-4">
-        <img src="images/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+        <img src="images/logo.png" alt="FB Digital Creatives Logo" style="height: 40px; margin-right: 10px;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,7 +67,7 @@
               <a class="nav-link" href="about.html">Our Roots</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Lets Bloom Together</a>
+              <a class="nav-link" href="contact.html">Let's Bloom Together</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Blossoms</a>
@@ -38,92 +77,54 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main id="main-content">
     <section id="hero">
       <div class="container-fluid px-0">
         <div class="row flex-lg-row-reverse align-items-center">
           <div class="col-lg-6">
-            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+             <!-- Added a descriptive label for the carousel -->
+             <div id="heroCarouselLabel" class="visually-hidden">Hero Carousel: Slide through vibrant digital creative designs.</div>
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" aria-labelledby="heroCarouselLabel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <picture>
-                    <source  srcset="images/hero-banner-large.jpg,
-                     images/hero-banner-large@2x.jpg 2x, 
-                     images/hero-banner-large@3x.jpg 3x"
-                     media="(min-width: 1024px)">
-
-                    <source  srcset="images/hero-banner-medium.jpg,
-                     images/hero-banner-medium@2x.jpg 2x,
-                      images/hero-banner-medium@3x.jpg 3x"
-                      media="(min-width: 768px)">
-
-                    <source  srcset="images/hero-banner-small.jpg, 
-                    images/hero-banner-small@2x.jpg 2x, 
-                    images/hero-banner-small@3x.jpg 3x"
-                    media="(max-width: 767px)">
-
-                    <img src="images/hero-banner-default.jpg" class="d-block w-100 carousel-image" alt="Hero Banner Slide 1">
+                    <source srcset="images/hero-banner-large.jpg, images/hero-banner-large@2x.jpg 2x, images/hero-banner-large@3x.jpg 3x" media="(min-width: 1024px)">
+                    <source srcset="images/hero-banner-medium.jpg, images/hero-banner-medium@2x.jpg 2x, images/hero-banner-medium@3x.jpg 3x" media="(min-width: 768px)">
+                    <source srcset="images/hero-banner-small.jpg, images/hero-banner-small@2x.jpg 2x, images/hero-banner-small@3x.jpg 3x" media="(max-width: 767px)">
+                    <img src="images/hero-banner-default.jpg" class="d-block w-100 carousel-image" alt="Hero Banner Slide 1 showing vibrant digital creative design" aria-label="Hero Banner Slide 1">
                   </picture>
                 </div>
-
                 <div class="carousel-item">
                   <picture>
-                    <source  srcset="images/hero-banner-2-large.jpg, 
-                    images/hero-banner-2-large@2x.jpg 2x, 
-                    images/hero-banner-2-large@3x.jpg 3x"
-                    media="(min-width: 1024px)">
-
-                    <source  srcset="images/hero-banner-2-medium.jpg, 
-                    images/hero-banner-2-medium@2x.jpg 2x, 
-                    images/hero-banner-2-medium@3x.jpg 3x"
-                    media="(min-width: 768px)">
-
-                    <source  srcset="images/hero-banner-2-small.jpg,
-                     images/hero-banner-2-small@2x.jpg 2x,
-                      images/hero-banner-2-small@3x.jpg 3x"
-                      media="(max-width: 767px)">
-                    <img src="images/hero-banner-2-default.jpg" class="d-block w-100 carousel-image" alt="Hero Banner Slide 2">
+                    <source srcset="images/hero-banner-2-large.jpg, images/hero-banner-2-large@2x.jpg 2x, images/hero-banner-2-large@3x.jpg 3x" media="(min-width: 1024px)">
+                    <source srcset="images/hero-banner-2-medium.jpg, images/hero-banner-2-medium@2x.jpg 2x, images/hero-banner-2-medium@3x.jpg 3x" media="(min-width: 768px)">
+                    <source srcset="images/hero-banner-2-small.jpg, images/hero-banner-2-small@2x.jpg 2x, images/hero-banner-2-small@3x.jpg 3x" media="(max-width: 767px)">
+                    <img src="images/hero-banner-2-default.jpg" class="d-block w-100 carousel-image" alt="Hero Banner Slide 2 showing creative digital solutions" aria-label="Hero Banner Slide 2">
                   </picture>
                 </div>
-
                 <div class="carousel-item">
                   <picture>
-                    <source  srcset="images/hero-banner-3-large.jpg,
-                     images/hero-banner-3-large@2x.jpg 2x,
-                      images/hero-banner-3-large@3x.jpg 3x"
-                      media="(min-width: 1024px)">
-
-                    <source  srcset="images/hero-banner-3-medium.jpg,
-                     images/hero-banner-3-medium@2x.jpg 2x, 
-                     images/hero-banner-3-medium@3x.jpg 3x"
-                     media="(min-width: 768px)">
-
-                    <source  srcset="images/hero-banner-3-small.jpg, 
-                    images/hero-banner-3-small@2x.jpg 2x, 
-                    images/hero-banner-3-small@3x.jpg 3x"
-                    media="(max-width: 767px)">
-
-                    <img src="images/hero-banner-3-default.jpg" class="d-block w-100 carousel-image" alt="Hero Banner Slide 3">
+                    <source srcset="images/hero-banner-3-large.jpg, images/hero-banner-3-large@2x.jpg 2x, images/hero-banner-3-large@3x.jpg 3x" media="(min-width: 1024px)">
+                    <source srcset="images/hero-banner-3-medium.jpg, images/hero-banner-3-medium@2x.jpg 2x, images/hero-banner-3-medium@3x.jpg 3x" media="(min-width: 768px)">
+                    <source srcset="images/hero-banner-3-small.jpg, images/hero-banner-3-small@2x.jpg 2x, images/hero-banner-3-small@3x.jpg 3x" media="(max-width: 767px)">
+                    <img src="images/hero-banner-3-default.jpg" class="d-block w-100 carousel-image" alt="Hero Banner Slide 3 showing innovative digital projects" aria-label="Hero Banner Slide 3">
                   </picture>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
           </div>
-
           <div class="col-lg-6 left-panel bg-secondary vh-100">
             <h1 class="mb-5">FB Digital Creatives</h1>
             <h2 class="mb-5">Bloom Digitally with Creative Excellence</h2>
-            <!-- <button type="submit" class="blink-button bg-primary">Unveil the magic by clicking the image</button> -->
-            <button type="submit" class="blink-button bg-primary animate__animated animate__bounce">Unveil the magic by clicking the image</button>
-          </div>
+            <button type="submit" class="blink-button bg-primary animate__animated animate__bounce" aria-label="Click to unveil the magic">Unveil the magic by clicking the image</button>
           </div>
         </div>
       </div>
@@ -132,70 +133,44 @@
       <section class="bg-dark text-light py-5">
         <div class="container-fluid">
           <picture>
-            <source media="(min-width: 1024px)"
-                srcset="./images/meetings-large.jpg">
-
-            <source media="(min-width: 768px)"
-                srcset="./images/meetings-medium.jpg">
-
-            <source media="(max-width: 767px)"
-                srcset="./images/meetings-small.jpg">
-
-                <img src="images/meetings.jpg" id="petalImage" class="d-block w-100 mb-5" alt="Bootstrap Themes" loading="lazy">
-        </picture>
-          
+            <source media="(min-width: 1024px)" srcset="./images/meetings-large.jpg">
+            <source media="(min-width: 768px)" srcset="./images/meetings-medium.jpg">
+            <source media="(max-width: 767px)" srcset="./images/meetings-small.jpg">
+            <img src="images/meetings.jpg" id="petalImage" class="d-block w-100 mb-5" alt="Image showing a business meeting setup" aria-label="Business meeting setup" loading="lazy">
+          </picture>
         </div>
         <div class="container px-4">
           <h2 class="text-center">Explore our Offerings</h2>
-
           <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
             <div class="col d-flex align-items-start mb-3">
               <a href="#servicesSection" class="text-white">
                 <picture>
-                  <source media="(min-width: 1024px)"
-                      srcset="./images/our-services-large.jpg">
-      
-                  <source media="(min-width: 768px)"
-                      srcset="./images/our-services-medium.jpg">
-      
-                  <source media="(max-width: 767px)"
-                      srcset="./images/our-services-small.jpg">
-      
-                      <img src="images/our-services.jpg" id="petalImage" class="d-block w-100 mb-3" alt="Bootstrap Themes image showing our services offered with a flower theme background" loading="lazy"  aria-label="">
-              </picture>
+                  <source media="(min-width: 1024px)" srcset="./images/our-services-large.jpg">
+                  <source media="(min-width: 768px)" srcset="./images/our-services-medium.jpg">
+                  <source media="(max-width: 767px)" srcset="./images/our-services-small.jpg">
+                  <img src="images/our-services.jpg" id="petalImage1" class="d-block w-100 mb-3" alt="Image showing services offered by FB Digital Creatives" aria-label="Services offered by the company" loading="lazy">
+                </picture>
                 <h3 class="text-center mb-3">Brief Intro to Our Services</h3>
               </a>
             </div>
             <div class="col d-flex align-items-start mb-3">
               <a href="#testimonialsSection" class="text-white">
                 <picture>
-                  <source media="(min-width: 1024px)"
-                      srcset="./images/testimonials-large.jpg">
-      
-                  <source media="(min-width: 768px)"
-                      srcset="./images/testimonials-medium.jpg">
-      
-                  <source media="(max-width: 767px)"
-                      srcset="./images/testimonials-small.jpg">
-      
-                      <img src="images/testimonials.jpg" id="petalImage" class="d-block w-100 mb-3" alt="image showing client testimonials" loading="lazy"  aria-label="">
-              </picture>
+                  <source media="(min-width: 1024px)" srcset="./images/testimonials-large.jpg">
+                  <source media="(min-width: 768px)" srcset="./images/testimonials-medium.jpg">
+                  <source media="(max-width: 767px)" srcset="./images/testimonials-small.jpg">
+                  <img src="images/testimonials.jpg" id="petalImage2" class="d-block w-100 mb-3" alt="Image showing client testimonials" aria-label="Client testimonials" loading="lazy">
+                </picture>
                 <h3 class="text-center mb-3">Client Testimonials</h3>
               </a>
             </div>
-            <div class="col d-flex align-items-start mb-3">
+           <div class="col d-flex align-items-start mb-3">
               <a href="#featuredProjectsSection" class="text-white">
                 <picture>
-                  <source media="(min-width: 1024px)"
-                      srcset="./images/featured-projects-large.jpg">
-      
-                  <source media="(min-width: 768px)"
-                      srcset="./images/featured-projects-medium.jpg">
-      
-                  <source media="(max-width: 767px)"
-                      srcset="./images/featured-projects-small.jpg">
-      
-                      <img src="images/featured-projects.jpg" id="petalImage" class="d-block w-100 mb-3" alt="image showing collage of projects" loading="lazy"  aria-label="">
+                  <source media="(min-width: 1024px)" srcset="./images/featured-projects-large.jpg">
+                  <source media="(min-width: 768px)" srcset="./images/featured-projects-medium.jpg">
+                  <source media="(max-width: 767px)" srcset="./images/featured-projects-small.jpg">
+                  <img src="images/featured-projects.jpg" id="petalImage3" class="d-block w-100 mb-3" alt="image showing collage of projects" loading="lazy"  aria-label="Featured projects collage">
               </picture>
                 <h3 class="text-center mb-3">Featured Project</h3>
               </a>
@@ -208,13 +183,18 @@
            <!-- <h2 class="mb-4 text-center">Our Services</h2> -->
           <div class="row mb-4">
             <div class="col-lg-6">
-              <img class="img-fluid" src="images/our-services.jpg" alt="">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./images/our-services-large.jpg">
+                <source media="(min-width: 768px)" srcset="./images/our-services-medium.jpg">
+                <source media="(max-width: 767px)" srcset="./images/our-services-small.jpg">
+                <img src="images/our-services.jpg" class="img-fluid w-100 mb-3" alt="Image showing collage of projects" loading="lazy" aria-label="Our services collage">
+              </picture>
             </div>
             <div class="col-lg-6 align-self-center">
               <h2>Brief intro to services</h2>
               <p>At FB Digital Creatives, we cultivate a garden of services to help your business blossom online. From web design and development to graphic design and digital marketing, our team of expert gardeners nurtures your vision, ensuring it flourishes into a vibrant digital presence.</p>
               <a href="#hero" class="btn btn-outline-primary">Back to image</a>
-              <a href="#services.html" class="btn btn-primary">Explore</a>
+              <a href="services.html" class="btn btn-primary">Explore</a>
             </div>
           </div>
         </div>
@@ -223,7 +203,12 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 order-lg-2">
-              <img class="img-fluid" src="images/testimonials.jpg" alt="">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./images/testimonials-large.jpg">
+                <source media="(min-width: 768px)" srcset="./images/testimonials-medium.jpg">
+                <source media="(max-width: 767px)" srcset="./images/testimonials-small.jpg">
+                <img src="images/testimonials.jpg" class="img-fluid w-100 mb-3" alt="Image showing client testimonials" loading="lazy" aria-label="Client testimonials">
+              </picture>
             </div>
             <div class="col-lg-6 order-lg-1 align-self-center">
               <div>
@@ -240,7 +225,12 @@
         <div class="container">
           <div class="row mb-4">
             <div class="col-lg-6">
-              <img class="img-fluid" src="images/featured-projects.jpg" alt="">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./images/featured-projects-large.jpg">
+                <source media="(min-width: 768px)" srcset="./images/featured-projects-medium.jpg">
+                <source media="(max-width: 767px)" srcset="./images/featured-projects-small.jpg">
+                <img src="images/featured-projects.jpg" class="img-fluid w-100 mb-3" alt="Image showing collage of projects" loading="lazy" aria-label="Featured projects collage">
+              </picture>
             </div>
             <div class="col-lg-6 align-self-center">
               <h2>Featured Projects</h2>
@@ -254,12 +244,13 @@
     </div>
     <section class="py-5 bg-dark text-center text-white">
       <div class="container">
-        <h2 class="mb-4">Lets start your Bloom</h2>
+        <h2 class="mb-4">Let's start your Bloom</h2>
         <p class="mb-4">Ready to bloom digitally with us? Click the button below to get started!</p>
         <a href="contact.html" class="btn btn-outline-primary">Begin Your Growth</a>
       </div>
     </section>
   </main>
+
   <footer class="bg-secondary text-light py-3">
     <div class="container">
       <div class="row">
@@ -271,8 +262,8 @@
             <li><a href="#" class="text-white">Sprout Ideas (Blog)</a></li>
             <li><a href="#" class="text-white">Showcase Garden</a></li>
             <li><a href="services.html" class="text-white">Blossoms</a></li>
-            <li><a href="contact.html" class="text-white">Lets bloom together</a></li>
-            <li><a href="#" class="text-white">Join our Garden</a></li>
+            <li><a href="contact.html" class="text-white">Let's Bloom Together</a></li>
+            <li><a href="#" class="text-white">Join Our Garden</a></li>
           </ul>
         </div>
         <div class="col-md-6">
@@ -282,18 +273,19 @@
                 <li><a href="#" class="text-white">Privacy Petals</a></li>
                 <li><a href="#" class="text-white">Terms of Bloom</a></li>
               </ul>
-              <div class="accessibility-options">
-                <button class="btn btn-sm btn-light" onclick="adjustFontSize('increase')">A+</button>
-                <button class="btn btn-sm btn-light" onclick="adjustFontSize('decrease')">A-</button>
-                <button class="btn btn-sm btn-light" onclick="toggleHighContrast()">High Contrast</button>
+              <div class="accessibility-options" role="group" aria-label="Accessibility Options">
+                <button class="btn btn-sm btn-light" onclick="adjustFontSize('increase')" aria-label="Increase Font Size">A+</button>
+                <button class="btn btn-sm btn-light" onclick="adjustFontSize('decrease')" aria-label="Decrease Font Size">A-</button>
+                <button class="btn btn-sm btn-light" onclick="toggleHighContrast()" aria-label="Toggle High Contrast Mode">High Contrast</button>
               </div>
             </div>
             <div class="col-md-6">
-              <a href="https://twitter.com" target="_blank" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-              <a href="https://facebook.com" target="_blank" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://instagram.com" target="_blank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-              <a href="https://linkedin.com" target="_blank" class="text-white"><i class="fab fa-linkedin-in mb-5"></i></a>
-              <select class="form-control">
+              <a href="https://twitter.com" target="_blank" class="text-white me-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://facebook.com" target="_blank" class="text-white me-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" class="text-white me-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin-in mb-5"></i></a>
+              <label for="language-selector" class="visually-hidden">Language Selector</label>
+              <select id="language-selector" class="form-control" aria-label="Select Language">
                 <option value="en">English</option>
                 <option value="es">Español</option>
                 <option value="fr">Français</option>
@@ -310,7 +302,9 @@
       </div>
     </div>
   </footer>
-  <button id="back-to-top" class="btn btn-primary back-to-top" onclick="scrollToTop()">&#8679;</button>
+
+  <button id="back-to-top" class="btn btn-primary back-to-top" onclick="scrollToTop()" aria-label="Back to Top">&#8679;</button>
+
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     window.onscroll = function() {
