@@ -38,18 +38,16 @@ This project is a web portfolio site developed for FB Digital Creatives as part 
 - **Responsive Design:** Fully responsive design that adapts to screen sizes from 320px to 2500px.
 - **Accessibility:** Includes skip links, aria roles, alt text for images, and proper HTML syntax for accessibility.
 - **Bootstrap Framework:** Utilized for layout, typography, and components.
-- **Blooming Menu:** This is an animated radial menu for navigation styled like a blooming flower using the Blooming Menu JavaScript library.
 - **Custom CSS:** for additional styling beyond Bootstrap's capabilities.
 - **Hover and Focus States:** Applied with transitions for links and buttons.
 
 ## Challenges and Learning
 - **Responsive Design:** Leveraging Bootstrap's grid system and media queries ensured the site works across various devices.
 - **Accessibility:** To make the site more inclusive, I implemented accessibility features such as skip links and aria roles.
-- **Custom Navigation:** Creating a custom radial navigation menu involved integrating the Blooming Menu library and ensuring it fits into the overall design and user experience.
 - **Integrating External Libraries:** Worked with external CSS and JavaScript libraries for enhanced functionality.
 - **Design Conversion:** Converting high-fidelity designs from the User Experience Design course into functional HTML and CSS.
 - **Image Optimization:** Used the `<picture>` element with `srcset`, `sizes`, and media attributes for optimized images.
-- **Overcoming Bootstrap Limitations:** Used Google Chrome's inspect element tool and W3Schools to resolve styling conflicts with Bootstrap.
+- **Overcoming Bootstrap Limitations:** Used Google Chrome's inspect element tool to resolve styling conflicts with Bootstrap.
 
 ## Learning Outcomes
 Through the development of this web portfolio, I have gained:
@@ -60,6 +58,7 @@ Through the development of this web portfolio, I have gained:
 - Leveraged Bootstrap's grid system and breakpoints for responsive design.
 - I used ARIA roles and skipped links for better accessibility.
 - Gained experience in using JSON and JavaScript.
+- Gained a better understanding on using the wave evaluation tools for accessibility like contrast
 
 ## Assets and Resources
 - **Images:** All images used are AI-generated.
@@ -67,8 +66,7 @@ Through the development of this web portfolio, I have gained:
   - [Bootstrap](https://getbootstrap.com/)
   - [Font Awesome](https://fontawesome.com/)
   - [Animate.css](https://animate.style/)
-  - [Blooming Menu](https://github.com/caiogondim/blooming-menu.js)
-- **CSS Validator:** [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+- **CSS Validator:** [W3C HTML Validation Service]([https://jigsaw.w3.org/css-validator/#validate_by_input]
 
 ## Usage
 - Navigate through the pages using the menu.
