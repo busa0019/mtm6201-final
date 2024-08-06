@@ -12025,5 +12025,13 @@ a:focus {
     order: 1;
   }
 }
+@media (min-width: 992px) {
+  h3, .h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
 
 /*# sourceMappingURL=custom.css.map */

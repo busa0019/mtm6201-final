@@ -259,4 +259,14 @@ a:focus {
   
 }
 
+// Media query for desktop
+@media (min-width: 992px) {
+  
+  h3 {
+    font-size: 2rem; // Adjust h3 font size for desktop
+  }
+  p{
+    font-size: 1.2rem;
+  }
+}
 
